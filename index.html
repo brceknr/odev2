@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        background-color: #f8f5e9;
+        height: 400px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 15px;
+      }
+      .container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin: auto;
+        display: block;
+        margin-top: 10px;
+      }
+      .kutu1 {
+        background-color: #f8f5e9;
+        flex: 1;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+      .kutu2 {
+        background-color: #f8f5e9;
+        flex: 2;
+        display: block;
+
+        align-items: center;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+      .kutu2 .isim {
+        display: block;
+        margin-top: 15px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .kutu2 .aciklama {
+        display: block;
+        margin-top: 15px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #f1f0e8;
+      }
+      .kutu2 img {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin: 25px;
+      }
+      .kutu2 button {
+        color: #df6d14;
+        margin: 25px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .search-container {
+        margin: 15px;
+        background-color: #9dc08b;
+        min-height: 40px;
+      }
+      .search-container .home-button {
+        cursor: pointer;
+        border-radius: 15px;
+        color: #df6d14;
+        background-color: #f8f5e9;
+        margin: auto;
+        margin-top: auto;
+      }
+      .kutu3 {
+        background-color: brown;
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+      }
+      .kutu3 img {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .kutu3 span {
+        color: #3a7d44;
+        display: flex inline;
+        text-align: center;
+      }
+      .kutukas {
+        background-color: #9dc08b;
+        height: 200px;
+        width: 500px;
+        display: flex;
+      }
+      .kutukirpik {
+        display: flex;
+        height: 200px;
+        width: 500px;
+        background-color: #9dc08b;
+      }
+      .kututirnak {
+        height: 200px;
+        width: 500px;
+        background-color: #9dc08b;
+        display: flex;
+      }
+    </style>
+
+    <div class="search-container">
+      <a href="index.html">
+        <button class="home-button">Home</button>
+      </a>
+      <a href="index.html">
+        <button class="home-button">About</button>
+      </a>
+      <a href="index.html">
+        <button class="home-button">Products</button>
+      </a>
+
+      <input type="text" id="search" placeholder="Arama yap" />
+      <button type="button" onclick="searchFunction()">Search</button>
+    </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="kutu1"><img src="kadın.jpg" alt="" /></div>
+      <div class="kutu2">
+        <span class="isim">SHINE</span>
+        <span class="aciklama">Be Beauty</span>
+        <a href="http://www.facebook.com">
+          <img src="facebook.png" alt="" />
+        </a>
+        <a href="http://www.x.com">
+          <img src="twitter.png" alt="" />
+        </a>
+        <a href="http://www.instagram.com">
+          <img src="instagram.webp" alt="" />
+        </a>
+        <a href="http://www.youtube.com">
+          <img src="youtube.png" alt="" />
+          <button>Subsccribe</button>
+          <button>Message</button>
+          <button>❤️Like</button>
+        </a>
+      </div>
+    </div>
+    <div class="kutu3">
+      <div class="kutukas">
+        <img src="kaş.jpg" alt="" /><span>Mikroblading Kaş: 5000₺ </span>
+      </div>
+      <div class="kutukirpik">
+        <img src="kirpik.jpg" alt="" /><span>İpek Kirpik: 2000₺ </span>
+      </div>
+      <div class="kututirnak">
+        <img src="tirnak.jpg" alt="" /><span>Jel Tırnak 2000₺ </span>
+      </div>
+    </div>
+  </body>
+  <div></div>
+</html>
